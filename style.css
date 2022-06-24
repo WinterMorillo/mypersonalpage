@@ -410,11 +410,21 @@ span{
     width: 100%;
 }
 
+#projects .coffe-picture{
+    max-width: 100%;
+    height: 100%;
+}
+
 #projects .project-info h1{
     font-size: 4rem;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+#projects .project-info .info__coffee{
+    width: 2.5rem;
+}
+
 
 #projects .project-info span{
     color: #007af3;
@@ -430,11 +440,16 @@ span{
         display: inline-block;
         border-radius: 5em;
         margin-top: 20px;
+        margin-bottom: 30px;
 }
 
 #projects .project-info h2{
     font-size: 2rem;
     margin-bottom: 10px;
+}
+
+#projects .project-info p{
+    font-size: 1.7rem;
 }
 
 #projects .project-img{
