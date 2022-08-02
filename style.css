@@ -298,9 +298,9 @@ span{
 
 #services .services{
     flex-direction: column;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 0;
 }
 
 #services .service-top p{
@@ -318,6 +318,13 @@ span{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
+}
+
+#services .service-pictures{
+    width: 15rem;
+    padding-top: 5rem;
+    margin-right: 2rem;
+
 }
 
 #services .service-item{
@@ -363,6 +370,7 @@ span{
 }
 
 
+
 /* End Service Section */
 
 
@@ -370,7 +378,7 @@ span{
 /* Projects Section*/
 
 #projects .projects{
-    padding: 100px 0;
+    padding: 0 0 100px 0;
     flex-direction: column;
     margin: 0 auto;
     max-width: 1200px;
