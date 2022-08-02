@@ -301,6 +301,9 @@ span{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+    justify-content: start;
+    padding: 100px 0 0 0;
+    min-height: 60vh;
 }
 
 #services .service-top p{
@@ -322,9 +325,7 @@ span{
 
 #services .service-pictures{
     width: 15rem;
-    padding-top: 5rem;
     margin-right: 2rem;
-
 }
 
 #services .service-item{
@@ -369,6 +370,18 @@ span{
     text-align: justify;
 }
 
+#services .service-work{
+    padding-top: 100px 0;
+    display: block;
+}
+
+#services .work{
+    display: flex;
+}
+
+#services .work-pic{
+    width: 5rem;
+}
 
 
 /* End Service Section */
