@@ -302,7 +302,7 @@ span{
     margin: 0 auto;
     padding: 0;
     justify-content: start;
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     min-height: 60vh;
 }
 
@@ -391,14 +391,14 @@ span{
 /* Projects Section*/
 
 #projects .projects{
-    padding: 0 0 100px 0;
+    padding: 0;
     flex-direction: column;
     margin: 0 auto;
     max-width: 1200px;
 }
 
 #projects .project-header h1{
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 #projects .all-projects{
@@ -461,7 +461,6 @@ span{
         display: inline-block;
         border-radius: 5em;
         margin-top: 20px;
-       
 }
 
 #projects .project-info h2{
@@ -504,11 +503,11 @@ span{
 /* About Section*/
 
 #about .about{
-    flex-direction: column-reverse;
-    margin: 0 auto;
-    padding: 100px 20px;
-    text-align: center;
     max-width: 1200px;
+    flex-direction: column-reverse;
+    padding: 0 20px;
+    text-align: center;
+    align-items: center;
 }
 
 #about .col-left img{
@@ -517,7 +516,7 @@ span{
 }
 
 #about .col-right{
-    width: 100%;
+    width: 80%;
 }
 
 #about .col-right h2{
@@ -530,6 +529,7 @@ span{
     margin-bottom: 10px;
     font-size: 17px;
     line-height: 1.5;
+    padding: 0 25px;
 }
 
 #about .col-right a{
@@ -565,6 +565,7 @@ span{
 
 #contact .contact{
     flex-direction: column;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -715,7 +716,7 @@ span{
     #projects .project-item{
         flex-direction: row;
         width: 85%;
-        height: 300px;
+        height: 600px;
         margin: 0;
         border-radius: 0px;
     }
@@ -731,6 +732,7 @@ span{
 
     #projects .project-img{
         width: 50%;
+        height: 600px;
     }
 
     /*End Project Section*/
@@ -738,7 +740,6 @@ span{
 
     /*About Section*/
     #about .about{
-        margin-top: -150px;
         flex-direction: row;
         margin-left: 30px;
         width: 95%;
@@ -748,9 +749,6 @@ span{
 
     /*Contact Section*/
 
-    #contact .contact{
-        margin-top: -200px;
-    }
 
     #contact .contact-items{
         width: 100%;
@@ -813,9 +811,30 @@ span{
     }
     /*End Services Section*/
 
+    #projects .project-item{
+        flex-direction: row;
+        width: 85%;
+        height: 300px;
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    #projects .project-info{
+        height: 100%;
+        width: 50%;
+    }
+
+    #projects .project-img{
+        width: 50%;
+    }
+
     /*About Section*/
     #about .about{
-        padding-left: 250px;
+        /*padding-left: 250px;*/
     }
 
     /*End About Section*/
@@ -823,3 +842,66 @@ span{
 
 
 /* End Media Queries for Tablets*/
+
+/* Medias Queries*/
+
+@media (max-width: 480px){
+
+    #services .service-pictures{
+        display: flex;
+        width: 90px;
+        padding: 0 0 20px 0;
+    }
+
+    #services .container{
+        padding-top: 50px;
+    }
+
+    #projects .project-item{
+        width: 90%;
+    }
+
+    #projects .project-img{
+        width: 100%;
+    }
+
+    #projects .project-header h1{
+        margin-bottom: 35px;
+    }
+
+    #projects .container{
+        padding: 0;
+    }
+
+    #about .container{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    #services .service-pictures{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 10px 15px 10px;
+    }
+
+    #projects .container{
+        padding: 50px;
+    }
+
+    #about .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about .col-left{
+        margin-bottom: 50px;
+    }
+
+    #about .col-right p {
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+
+}
